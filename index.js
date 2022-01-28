@@ -14,7 +14,7 @@ let questions = [
 let reponses = [
 //[Tableau[0] est la Valeur0 de la variables: let reponses               ],
 // "      Valeur0       ", "     Valeur1    ", "        Valeur2         "   Sont les Valeur du Tableau[0], 
-  ["Un language balisage", "Le cousin du ulm", "Des lettre de l'alphabet"],
+  ["Un language de balisage", "Le cousin du ulm", "Des lettre de l'alphabet"],
 //[Tableau[1] est la Valeur1 de la variables: let reponses                          ],
 // "       Valeur0        ", "        Valeur1       ", "          Valeur2          "   Sont les Valeur du Tableau[1],
   ["Donne du style au html", "Une marque de vetement", "Une taille de soutien gorge"],
