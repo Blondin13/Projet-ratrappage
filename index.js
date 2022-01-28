@@ -79,7 +79,7 @@ afficheResponses();
 //Je créé ma fonction pour affiché ma question que j'appel: function afficheQuestion2()
 function afficheQuestions2() {
   //Dans ma fonction je recupère ma variable: let pQuestion2 que j'intègre dans mon HTML avec le (innerHTML) et lui dit qu'il est = à "voici ma question:"
-  pQuestion2.innerHTML = "<strong> Voici ma question: </strong> <br>";
+  pQuestion2.innerHTML = "<strong> Voici ma question 2: </strong> <br>";
   //Dans ma fonction je recupère ma variable: let pQuestion2 que j'intègre dans mon HTML avec le (innerHTML) et lui dit qu'il est = à pQuestion2.innerHTML + qestion[1] de mon tableau
   pQuestion2.innerHTML = pQuestion2.innerHTML + questions[1]; 
 }
