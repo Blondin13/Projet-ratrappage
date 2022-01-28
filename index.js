@@ -1,3 +1,5 @@
+//----------------------------------------------- Les Tableaux ------------------------------------------------------------------------
+
 // Je déclare ma variable: let questions qui seras = a mon tableau déclaré avec []; et ses valeurs serons ["0", "1", "2",]; que l'on sépare avec des , un tableau se compte en commençant de "0", et non de "1",
 let questions = [
  // Valeur"0",
@@ -21,14 +23,15 @@ let reponses = [
   ["moblie-friendly", "Une reponse en anglais", "Un fruit"],
 ];
 
+//----------------------------------------------- Questions ---------------------------------------------------------------------------
 
 // Je déclare ma variable: let divQuestion qui seras = à la <div> avec l'(id= "question") de mon index.html
 let divQuestion = document.getElementById("questions");
-// Je déclare ma variable: let pQuestion qui me serviras a integré la Valeur"0" de ma variable: let question = ["0", "1", "2",]; dans le <p> de ma <div> avec l'(id= "question") de mon index.html
+// Je déclare ma variable: let pQuestion qui me serviras a integré la Valeur"0" de ma variable: let questions = ["0", "1", "2",]; dans le <p> de ma <div> avec l'(id= "question") de mon index.html
 let pQuestion = divQuestion.querySelector("p");
 // Je déclare ma variable: let divQuestion2 qui seras = à la <div> avec l'(id= "question2) de mon index.html
 let divQuestion2 = document.getElementById("questions2");
-// Je déclare ma variable: let pQuestion2 qui me serviras a integré la Valeur"1" de ma variable: let question = ["0", "1", "2",]; dans le <p> de ma <div> avec l'(id= "question2") de mon index.html
+// Je déclare ma variable: let pQuestion2 qui me serviras a integré la Valeur"1" de ma variable: let questions = ["0", "1", "2",]; dans le <p> de ma <div> avec l'(id= "question2") de mon index.html
 let pQuestion2 = divQuestion2.querySelector("p");
 
 
@@ -37,9 +40,11 @@ let pQuestion2 = divQuestion2.querySelector("p");
 function afficheQuestions(){
   //Dans ma fonction je pose ma variable: let pQuestion que j'intègre dans mon index.html avec le (.innerHTML) et lui dit qu'il seras = à "voici ma question:";
   pQuestion.innerHTML = "<strong> Voici ma question: </strong> <br>"; // j'ai rajouter un <strong> pour rendre le texte plus gras et un <br> pour allez a la ligne
-  //Dans ma fonction je pose ma variable: let pQuestion que j'intègre dans mon index.html avec le (.innerHTML) et lui dit qu'il seras = à pQuestion.innerHTML + ma variable: qestions[] avec ça Valeur"0"
+  //Dans ma fonction je pose ma variable: let pQuestion que j'intègre dans mon index.html avec le (.innerHTML) et lui dit qu'il seras = à pQuestion.innerHTML + ma variable: qestions[] avec ça Valeur"0";
   pQuestion.innerHTML = pQuestion.innerHTML + questions[0];
 }
+
+//------------------------------------------------ Réponses ---------------------------------------------------------------------------
 
 // Je déclare ma variable: let divReponse qui seras = à la <div> avec l'(id= "reponses") de mon index.html
 let divReponse = document.getElementById("reponses");
@@ -66,7 +71,7 @@ function afficheResponses(){
   pReponse2.innerHTML = reponses[0][2] + "<br>" + "<br>";
 }
 
-//-----------------------------------------------------------  a continuer ------------------------------
+//-------------------------------------------  a continuer ----------------------------------------------------------------------------
 
 function verifieReponse(reponseThis){
 // fonction qui verifie si ma reponses et bonne 
@@ -88,7 +93,7 @@ afficheQuestions();
 afficheResponses();
 
 
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//----------------------------------------------- Questions2 --------------------------------------------------------------------------
 
 //Fonction pour afficher la Valeur"1" de ma variable: let questions = ["0", "1", "2",]; que j'afficherais grace a ma variable: let pQuestion2
 //function nomFonction(paramettre){
@@ -101,4 +106,4 @@ function afficheQuestions2() {
 // J'affiche ma fontion
 afficheQuestions2();
 
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//-------------------------------------------------------------------------------------------------------------------------------------
