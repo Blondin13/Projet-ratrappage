@@ -26,20 +26,20 @@ let reponses = [
 //----------------------------------------------- Questions ---------------------------------------------------------------------------
 
 // Je déclare ma variable: let divQuestion qui seras = à la <div> avec l'(id= "question") de mon index.html
-let divQuestion = document.getElementById("questions");
+let divQuestion = document.getElementById("question");
 // Je déclare ma variable: let pQuestion qui me serviras a integré la Valeur"0" de ma variable: let questions = ["0", "1", "2",]; dans le <p> de ma <div> avec l'(id= "question") de mon index.html
 let pQuestion = divQuestion.querySelector("p");
 // Je déclare ma variable: let divQuestion2 qui seras = à la <div> avec l'(id= "question2) de mon index.html
-let divQuestion2 = document.getElementById("questions2");
+let divQuestion2 = document.getElementById("question2");
 // Je déclare ma variable: let pQuestion2 qui me serviras a integré la Valeur"1" de ma variable: let questions = ["0", "1", "2",]; dans le <p> de ma <div> avec l'(id= "question2") de mon index.html
 let pQuestion2 = divQuestion2.querySelector("p");
 
 
 //Fonction pour afficher la Valeur"0" de ma variable: let questions = ["0", "1", "2",]; que j'afficherais grace a ma variable: let pQuestion
 //function nomFonction(paramettre){
-function afficheQuestions(){
-  //Dans ma fonction je pose ma variable: let pQuestion que j'intègre dans mon index.html avec le (.innerHTML) et lui dit qu'il seras = à "voici ma question:";
-  pQuestion.innerHTML = "<strong> Voici ma question: </strong> <br>"; // j'ai rajouter un <strong> pour rendre le texte plus gras et un <br> pour allez a la ligne
+function afficheQuestion(){
+  //Dans ma fonction je pose ma variable: let pQuestion que j'intègre dans mon index.html avec le (.innerHTML) et lui dit qu'il seras = à "VOICI MA QUESTION:";
+  pQuestion.innerHTML = "<strong> VOICI MA QUESTION: </strong> <br>"; // j'ai rajouter un <strong> pour rendre le texte plus gras et un <br> pour allez a la ligne
   //Dans ma fonction je pose ma variable: let pQuestion que j'intègre dans mon index.html avec le (.innerHTML) et lui dit qu'il seras = à pQuestion.innerHTML + ma variable: qestions[] avec ça Valeur"0";
   pQuestion.innerHTML = pQuestion.innerHTML + questions[0];
 }
@@ -61,8 +61,8 @@ let pReponse2 = divReponse.querySelector("#reponse2");
 //function nomFonction(paramettre){                                                                         [["0", "1", "2",],["0", "1", "2",],["0", "1", "2",]];
 function afficheResponses(){
     
-  //Dans ma fonction je pose ma variable: let pText que j'intègre dans mon index.html avec le (.innerHTML) et lui dit qu'il seras = à "voici mes reponses:"
-  pText.innerHTML = "<strong> Voici mes reponses: </strong> <br>";  
+  //Dans ma fonction je pose ma variable: let pText que j'intègre dans mon index.html avec le (.innerHTML) et lui dit qu'il seras = à "VOICI MES REPONSES:";
+  pText.innerHTML = "<strong> VOICI MES REPONSES: </strong> <br>";  
   //Dans ma fonction je pose ma variable: let pReponse0 que j'intègre dans mon index.html avec le (.innerHTML) et lui dit qu'il seras = ma variable: responses avec son Tableau[0] et ça Valeur[0];
   pReponse0.innerHTML = reponses[0][0];
   //Dans ma fonction je pose ma variable: let pReponse1 que j'intègre dans mon index.html avec le (.innerHTML) et lui dit qu'il seras = ma variable: responses avec son Tableau[0] et ça Valeur[1];
@@ -75,7 +75,7 @@ function afficheResponses(){
 
 function verifieReponse(reponseThis){
 // fonction qui verifie si ma reponses et bonne 
-  if (reponseThis.innerHTML == reponse[0][0]) {
+  if (reponseThis.innerHTML == reponses[0][0]) {
   // si (<p>.innerHTML et egal a la reponse 0 du tableau 0)
     console.log("gagner");
   //alors on lui dit qu il a gagner
@@ -86,10 +86,10 @@ function verifieReponse(reponseThis){
   }
 }
 
-//appel ma fonction qui joueras le code demander dedans
-afficheQuestions();
+//Appel ma fonction qui joueras le code demandé dedans
+afficheQuestion();
 
-//appel ma fonction qui joueras le code demander dedans
+//Appel ma fonction qui joueras le code demandé dedans
 afficheResponses();
 
 
@@ -97,13 +97,14 @@ afficheResponses();
 
 //Fonction pour afficher la Valeur"1" de ma variable: let questions = ["0", "1", "2",]; que j'afficherais grace a ma variable: let pQuestion2
 //function nomFonction(paramettre){
-function afficheQuestions2() {
-  //Dans ma fonction je pose ma variable: let pQuestion2 que j'intègre dans mon index.html avec le (.innerHTML) et lui dit qu'il seras = à "voici ma question2:";
-  pQuestion2.innerHTML = "<strong> Voici ma question 2: </strong> <br>";
+function afficheQuestion2() {
+  //Dans ma fonction je pose ma variable: let pQuestion2 que j'intègre dans mon index.html avec le (.innerHTML) et lui dit qu'il seras = à "VOICI MA QUESTION 2:";
+  pQuestion2.innerHTML = "<strong> VOICI MA QUESTION 2: </strong> <br>";
   //Dans ma fonction je pose ma variable: let pQuestion que j'intègre dans mon index.html avec le (.innerHTML) et lui dit qu'il seras = à pQuestion2.innerHTML + ma variable: qestions[] avec ça Valeur"1"
   pQuestion2.innerHTML = pQuestion2.innerHTML + questions[1]; 
 }
-// J'affiche ma fontion
-afficheQuestions2();
+
+//Appel ma fonction qui joueras le code demandé dedans
+afficheQuestion2();
 
 //-------------------------------------------------------------------------------------------------------------------------------------
