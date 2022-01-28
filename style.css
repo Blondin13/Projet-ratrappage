@@ -10,7 +10,7 @@ header{
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 main{
@@ -19,6 +19,7 @@ main{
 
 p{
     font-size: 2rem;
+    color: blue;
 }
 
 footer{
@@ -28,5 +29,5 @@ footer{
 }
 
 h2{
-    font-size: 3rem;
+    font-size: 4rem;
 }
