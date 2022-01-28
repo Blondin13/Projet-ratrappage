@@ -1,61 +1,74 @@
+// Je déclare ma variable: let questions qui seras = a mon tableau déclaré avec []; et ses valeurs serons ["0", "1", "2",]; que l'on sépare avec des , un tableau se compte en commençant de "0", et non de "1",
 let questions = [
+ // Valeur"0",
   "Quesque le html ?",
+ // Valeur"1",
   "Quesque le style.css ?",
+ // Valeur"2",
   "Quesque le reponcive ?",
 ];
-let reponse = [
-  //tableau 0
+
+// Je déclare ma variable: let responses qui seras = a mon tableau déclaré avec []; qui contient lui même 3 autres tableaux [[0], [1], [2],]; qui seront ses valeurs que l'on sépare avec des ,
+let reponses = [
+//[Tableau[0] est la Valeur0 de la variables: let reponses               ],
+// "      Valeur0       ", "     Valeur1    ", "        Valeur2         "   Sont les Valeur du Tableau[0], 
   ["Un language balisage", "Le cousin du ulm", "Des lettre de l'alphabet"],
-  //tableau 1
+//[Tableau[1] est la Valeur1 de la variables: let reponses                          ],
+// "       Valeur0        ", "        Valeur1       ", "          Valeur2          "   Sont les Valeur du Tableau[1],
   ["Donne du style au html", "Une marque de vetement", "Une taille de soutien gorge"],
-  //tableau 2
+//[Tableau[2] est la Valeur2 de la variables: let reponses],
+// "    Valeur0    ", "        Valeur1       ", " Valeur2"   Sont les Valeur du Tableau[2],
   ["moblie-friendly", "Une reponse en anglais", "Un fruit"],
 ];
 
 
-// let divquestion et ma variable qui va dans mon document html chercher id "questions"
+// Je déclare ma variable: let divQuestion qui seras = à la <div> avec l'(id= "question") de mon index.html
 let divQuestion = document.getElementById("questions");
-// let pQuestion et ma variable egal divQuestion qui a recuperer id question qui est ma div et on selection le "p" de ma div 
+// Je déclare ma variable: let pQuestion qui me serviras a integré la Valeur"0" de ma variable: let question = ["0", "1", "2",]; dans le <p> de ma <div> avec l'(id= "question") de mon index.html
 let pQuestion = divQuestion.querySelector("p");
-    //-------------------------------------------------------------------------------------------------------------------------------------------------//
-    // Je déclare ma variable: let divQuestion2 que j'integre dans mon HTLM ou jai créé une autre <div> avec l'(id= "question2) et un autre <p>
-    let divQuestion2 = document.getElementById("questions2");
-    // Je déclare ma variable: let pQuestion2 que j'integre dans le <p> de ma <div> avec l'(id= "question2")
-    let pQuestion2 = divQuestion2.querySelector("p");
-    //-------------------------------------------------------------------------------------------------------------------------------------------------//
+// Je déclare ma variable: let divQuestion2 qui seras = à la <div> avec l'(id= "question2) de mon index.html
+let divQuestion2 = document.getElementById("questions2");
+// Je déclare ma variable: let pQuestion2 qui me serviras a integré la Valeur"1" de ma variable: let question = ["0", "1", "2",]; dans le <p> de ma <div> avec l'(id= "question2") de mon index.html
+let pQuestion2 = divQuestion2.querySelector("p");
 
-//fonction nomfonction (paramettre)
-function afficheQuestions() {
-//fonction pour afficher se que j y note don ma variable pQuestion que j intergres avec le innerHTLM et que je retourne avec ma variable + [0] de mmon tableau
-  pQuestion.innerHTML = "<strong> Voici ma question: </strong> <br>"; // * j'ai rajouter un strong *------------------------------------------------
+
+//Fonction pour afficher la Valeur"0" de ma variable: let questions = ["0", "1", "2",]; que j'afficherais grace a ma variable: let pQuestion
+//function nomFonction(paramettre){
+function afficheQuestions(){
+  //Dans ma fonction je pose ma variable: let pQuestion que j'intègre dans mon index.html avec le (.innerHTML) et lui dit qu'il seras = à "voici ma question:";
+  pQuestion.innerHTML = "<strong> Voici ma question: </strong> <br>"; // j'ai rajouter un <strong> pour rendre le texte plus gras et un <br> pour allez a la ligne
+  //Dans ma fonction je pose ma variable: let pQuestion que j'intègre dans mon index.html avec le (.innerHTML) et lui dit qu'il seras = à pQuestion.innerHTML + ma variable: qestions[] avec ça Valeur"0"
   pQuestion.innerHTML = pQuestion.innerHTML + questions[0];
 }
 
-
-// mes variables pris avec un id
-let divReponse = document.getElementById("reponses"); // cherche uniquement id
-    //-------------------------------------------------------------------------------------------------------------------------------------------------//
-    // je declare ma variables: let pText = que j integres dans mon <p> avec l'(id= "ptext") de mon HTML
-    let pText = document.getElementById("ptext");// 
-    //-------------------------------------------------------------------------------------------------------------------------------------------------//          
-let pReponse0 = divReponse.querySelector("#reponse0");// cherche id qu on recupere dans le parametre avec #
+// Je déclare ma variable: let divReponse qui seras = à la <div> avec l'(id= "reponses") de mon index.html
+let divReponse = document.getElementById("reponses");
+// je declare ma variables: let pText qui seras = à mon <p> avec l'(id= "ptext") de mon index.html
+let pText = document.getElementById("ptext");
+// Je déclare ma variable: let pReponse0 qui seras = à mon <p> avec l'(id= "reponses0") de mon index.html
+let pReponse0 = divReponse.querySelector("#reponse0");
+// Je déclare ma variable: let pReponse1 qui seras = à mon <p> avec l'(id= "reponses1") de mon index.html
 let pReponse1 = divReponse.querySelector("#reponse1");
+// Je déclare ma variable: let pReponse2 qui seras = à mon <p> avec l'(id= "reponses2") de mon index.html
 let pReponse2 = divReponse.querySelector("#reponse2");
 
-
-function afficheResponses() {
-// fonction pour afficher mes 3reponses que j integre dans mes <p> avec le innerHTML en lui idiquant chaque enplacement des reponses dans le tableau
-    //-------------------------------------------------------------------------------------------------------------------------------------------------//
-    //Dans ma fonction je recupère ma variable: let pText que j'intègre dans mon HTML avec le (innerHTML) et lui dit qu'il est = à "voici mes reponses:"
-    pText.innerHTML = "<strong> Voici mes reponses: </strong> <br>";
-    //-------------------------------------------------------------------------------------------------------------------------------------------------//        
-  pReponse0.innerHTML = reponse[0][0];
-  pReponse1.innerHTML = reponse[0][1];
-  pReponse2.innerHTML = reponse[0][2] + "<br>" + "<br>";//*Ajout d'un autre <br> pour séparé de la (question2)*---------------------------------------
+//Fonction pour afficher les Valeurs"0", "1", "2", du Tableau[0], déclarer avec ma variable: let reponses = [[  Tableau"0"  ],[  Tableau"1"  ],[  Tableau"2"  ]]; que j'afficherais grace a mes variables: let pReponse0; let pReponse1; let pReponse2;
+//function nomFonction(paramettre){                                                                         [["0", "1", "2",],["0", "1", "2",],["0", "1", "2",]];
+function afficheResponses(){
+    
+  //Dans ma fonction je pose ma variable: let pText que j'intègre dans mon index.html avec le (.innerHTML) et lui dit qu'il seras = à "voici mes reponses:"
+  pText.innerHTML = "<strong> Voici mes reponses: </strong> <br>";  
+  //Dans ma fonction je pose ma variable: let pReponse0 que j'intègre dans mon index.html avec le (.innerHTML) et lui dit qu'il seras = ma variable: responses avec son Tableau[0] et ça Valeur[0];
+  pReponse0.innerHTML = reponses[0][0];
+  //Dans ma fonction je pose ma variable: let pReponse1 que j'intègre dans mon index.html avec le (.innerHTML) et lui dit qu'il seras = ma variable: responses avec son Tableau[0] et ça Valeur[1];
+  pReponse1.innerHTML = reponses[0][1];
+  //Dans ma fonction je pose ma variable: let pReponse2 que j'intègre dans mon index.html avec le (.innerHTML) et lui dit qu'il seras = ma variable: responses avec son Tableau[0] et ça Valeur[2]; + deux <br> retours a la ligne pour séparé de la (question2)
+  pReponse2.innerHTML = reponses[0][2] + "<br>" + "<br>";
 }
 
+//-----------------------------------------------------------  a continuer ------------------------------
 
-function verifieReponse(reponseThis) {
+function verifieReponse(reponseThis){
 // fonction qui verifie si ma reponses et bonne 
   if (reponseThis.innerHTML == reponse[0][0]) {
   // si (<p>.innerHTML et egal a la reponse 0 du tableau 0)
@@ -76,13 +89,16 @@ afficheResponses();
 
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
-//Je créé ma fonction pour affiché ma question que j'appel: function afficheQuestion2()
+
+//Fonction pour afficher la Valeur"1" de ma variable: let questions = ["0", "1", "2",]; que j'afficherais grace a ma variable: let pQuestion2
+//function nomFonction(paramettre){
 function afficheQuestions2() {
-  //Dans ma fonction je recupère ma variable: let pQuestion2 que j'intègre dans mon HTML avec le (innerHTML) et lui dit qu'il est = à "voici ma question:"
+  //Dans ma fonction je pose ma variable: let pQuestion2 que j'intègre dans mon index.html avec le (.innerHTML) et lui dit qu'il seras = à "voici ma question2:";
   pQuestion2.innerHTML = "<strong> Voici ma question 2: </strong> <br>";
-  //Dans ma fonction je recupère ma variable: let pQuestion2 que j'intègre dans mon HTML avec le (innerHTML) et lui dit qu'il est = à pQuestion2.innerHTML + qestion[1] de mon tableau
+  //Dans ma fonction je pose ma variable: let pQuestion que j'intègre dans mon index.html avec le (.innerHTML) et lui dit qu'il seras = à pQuestion2.innerHTML + ma variable: qestions[] avec ça Valeur"1"
   pQuestion2.innerHTML = pQuestion2.innerHTML + questions[1]; 
 }
 // J'affiche ma fontion
 afficheQuestions2();
+
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
