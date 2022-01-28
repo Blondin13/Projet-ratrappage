@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    text-align: center;
+    background-color: chocolate;
+    height: 100px;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+main{
+    height: 621px;
+}
+
+#ptext{
+    color: black;
+}
+
+#reponse0{
+    color: rgb(39, 38, 38);
+}
+
+#reponse1{
+    color: rgb(39, 38, 38);
+}
+
+#reponse2{
+    color: rgb(39, 38, 38);
+}
+
+p{
+    font-size: 2rem;
+    color: blue;
+}
+
+footer{
+    text-align: center;
+    background-color: chocolate;
+    height: 100px;
+}
+
+h2{
+    font-size: 4rem;
+}
